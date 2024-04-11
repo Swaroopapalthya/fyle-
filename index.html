@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Income Calculator</h1>
+    <form id="income-form">
+      <div class="form-group">
+        <label for="gross-income">Enter gross Annual Income:</label>
+        <input type="number" id="gross-income" name="gross-income" placeholder="Enter gross Annual Income" required>
+      </div>
+      <div class="form-group">
+        <label for="extra-income">Enter extra Income from other sources:</label>
+        <input type="number" id="extra-income" name="extra-income" placeholder="Enter extra income from other source">
+      </div>
+      <div class="form-group">
+        <label for="age-group">Enter age Group:</label>
+        <select id="age-group" name="age-group" required>
+          <option value="">Add total applications deductions</option>
+          <option value="<40">&lt; 40</option>
+          <option value=">=40 & < 60">&gt;=40 &amp; &lt; 60</option>
+          <option value=">=60">&gt;=60</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="deductions">Enter total applicable deductions:</label>
+        <input type="number" id="deductions" name="deductions" placeholder="Add total applicable deducations">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
